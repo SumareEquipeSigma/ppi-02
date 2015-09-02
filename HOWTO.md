@@ -77,9 +77,15 @@ Explicação rápida dos Comandos básicos:
 * **git status** Mostra o status LOCAL deste repositório.
 * **git rm arq-name** Remove o arquivo localmente e o marca para ser removido no próximo push.
 
+### Validador de HTML/CSS
+Útil para verificar se o HTML e o CSS são documentos dentro do padrão da W3C.
+
+[Validador HTML]
+[Validador CSS]
 ---
 
 [Editor Online de Arquivos **.md**]:http://jrmoran.com/playground/markdown-live-editor/
 [Download Git Bash]:https://git-scm.com/downloads
 [Download GitHub Desktop]:https://desktop.github.com/
-
+[Validador HTML]:https://validator.w3.org/
+[Validador CSS]:http://jigsaw.w3.org/css-validator/

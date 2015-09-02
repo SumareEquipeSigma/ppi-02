@@ -7,5 +7,14 @@ Bem vindos ao repositório do PPI do 2o. Semestre do curso de Ciência da Computaç
 
 Projeto: **CALCULADORA COMERCIAL WEB**
 
-Tecnologias utilizadas: **HTML5/CSS3/Javascript+JQuery**
+Arquivos neste Repositório:
+
+* **'README.md'** Contém o conteúdo que vc está lendo agora.
+* **'HOWTO.md'** Contém dicas e links para ferramentas usadas no projeto, inclusive sobre como instalar e operar o GitHub.
+* **'sigmawebcalc.html'** HTML contendo a estrutura da aplicação.
+* **'sigmawebcalc.css'** Contém todos os Estilos.
+* **'sigmawebcalc.js'** Código Javascript + jQuery da aplicação.
+* **'images/'** É um diretório que contém todas as imagens utilizadas.
+
+Tecnologias utilizadas: **HTML5/CSS3/Javascript+jQuery**
 
