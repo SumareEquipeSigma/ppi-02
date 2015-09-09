@@ -1,4 +1,4 @@
-// Esta aqui é uma pequena função teste
+// Esta aqui Ã© uma pequena funÃ§Ã£o teste
 
 $(document).ready(function() {
 	$("#teste").click(function() {
