@@ -1,29 +1,45 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html>
 	<head>
 		<!-- 
-		  Arquivo HTML mínimo para inicio do projeto.
-		  O arquivo HTML fornecerá a estrutura para nossa aplicação web.
+		  Arquivo HTML mÃ­nimo para inicio do projeto.
+		  O arquivo HTML fornecerÃ¡ a estrutura para nossa aplicaÃ§Ã£o web.
 		-->
 		<title>Calculadora Comercial Web OpenSource</title>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 		<!-- 
-		  Todos os Estilos ficarão em um outro arquivo. Os Estilos definem a aparência
-		  final da página.
+		  Todos os Estilos ficarÃ£o em um outro arquivo. Os Estilos definem a aparÃªncia
+		  final da pÃ¡gina.
 		-->
 		<link rel="stylesheet" href="sigmawebcalc.css">
 	</head>
 
 	<body>
 		<!-- ........................................................................ -->
-		<!-- Comentários -->
-		<h2 id="teste">Teste acentuação. Clique aqui para testar o jQuery.</h2>
-		
+		<!-- ComentÃ¡rios -->
+		<h2 id="teste">Teste acentuaÃ§Ã£o. Clique aqui para testar o jQuery.</h2>
+
+		<div class="visor">
+			<input id="sintaxe" type="text" value="Sigma WebCalc">
+			<input id="entrada" type="text" value="" tabindex="1">
+		</div>
+		<div id="botoes_calc" class="botoes">
+			<button id="bt0">0</button>
+			<button id="bt1">1</button>
+			<button id="bt2">2</button>
+			<button id="bt3">3</button>
+			<button id="btPoint">.</button>
+			<button id="btSomar" class="operador">+</button>
+			<button id="btSubtrair" class="operador">-</button>
+			<button id="btResultado" class="operador">=</button>
+		</div>
+	
 		<!-- 
 		  O codigo em Javascript vai aqui para garantir performance.
-		  O Javascript adiciona funcionalidade a uma página HTML. Vamos usar o jQuery para
-		  facilitar e reduzir o tamanho do código final.
+		  O Javascript adiciona funcionalidade a uma pÃ¡gina HTML. Vamos usar o jQuery para
+		  facilitar e reduzir o tamanho do cÃ³digo final.
 		  Usamos o CDN do Google para garantir performance e disponibilidade.
-		  Uma outra opção seria CDN diretamente do site do jQuery ou baixarmos o arquivo
+		  Uma outra opÃ§Ã£o seria CDN diretamente do site do jQuery ou baixarmos o arquivo
 		  localmente.			
 		-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

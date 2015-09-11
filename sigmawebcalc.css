@@ -1,6 +1,37 @@
-﻿/* Comentários */
+﻿/* Comentários 
+
+Teste com seletores CSS. Extremamente útil.
+http://www.w3schools.com/cssref/trysel.asp
+
+*/
 body {
 	/* Estas fontes são consideradas seguras para uso na Web */
 	font-family: arial, sans-serif, lucida;
 	font-size: 14px;
+}
+
+.visor {
+	height: 30px;
+}
+
+.visor input {
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+	position: absolute;
+}
+
+.visor input#entrada {
+	background-color: transparent;
+}
+
+.visor input#sintaxe {
+	color: #bbb;
+}
+
+#botoes_calc button {
+    border-radius: 5px;	
+}
+
+.operador {
+	background-color: orange;
 }
