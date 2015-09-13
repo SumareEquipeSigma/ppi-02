@@ -35,3 +35,11 @@ body {
 .operador {
 	background-color: orange;
 }
+
+.separador {
+	background-color: green;	
+}
+
+#btResultado {
+	width: 50px;
+}

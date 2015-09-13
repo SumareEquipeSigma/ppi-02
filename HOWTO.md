@@ -74,13 +74,17 @@ Explicação rápida dos Comandos básicos:
 * **git add -a arq-name** Adiciona um arquivo para ser atualizado.
 * **git commit -m "msg"** Modifica LOCALMENTE e OFICIALMENTE o arquivo e o marca para ser enviado.
 * **git push** Envia as modificações para que todos possam vê-la.
+* **git pull** Traz todas as mudanças feitas por outros participantes.
 * **git status** Mostra o status LOCAL deste repositório.
 * **git rm arq-name** Remove o arquivo localmente e o marca para ser removido no próximo push.
+* **git branch** Mostra o Tronco (Branch) atual.
+* **git checkout teste** Muda para o branch de nome 'teste'.
+* **git checkout master** Volta ao branch principal.
 
 ### Validador de HTML/CSS
 Útil para verificar se o HTML e o CSS são documentos dentro do padrão da W3C.
 
-[Validador HTML]
+[Validador HTML]  
 [Validador CSS]
 ---
 
