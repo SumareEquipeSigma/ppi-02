@@ -23,7 +23,17 @@
 */
 var VISOR_DA_CALCULADORA = null,
     LINHA_DE_SINTAXE = null,
-    KEY_ENTER = 13; // Codigo ASCII da tecla ENTER
+    BOTAO_RESULTADO = null,
+    BOTAO_LIMPAR_VISOR = null,
+    
+    KEY_ENTER = 13, // Codigo ASCII da tecla ENTER
+    KEY_ESC = 27,
+    
+    ID_LINHA_DE_SINTAXE = "#sintaxe",
+    ID_VISOR_DA_CALCULADORA = "#entrada",
+    ID_BOTAO_RESULTADO = "#btResultado",
+    ID_BOTAO_LIMPAR_VISOR = "#btLimpar",
+    ID_BOTAO_LIMPAR_ULTIMO = "#btLimparUltimo";
 
 /* 
    A funcao 'init' e a primeira funcao que vamos rodar apos o download da pagina HTML
@@ -31,8 +41,10 @@ var VISOR_DA_CALCULADORA = null,
 */
 function init() {
 	// Seta algumas variaveis globais
-	VISOR_DA_CALCULADORA = $("#entrada"); // obj do tipo input
-	LINHA_DE_SINTAXE = $("#sintaxe"); // obj do tipo input
+	VISOR_DA_CALCULADORA = $(ID_VISOR_DA_CALCULADORA); // obj do tipo input
+	LINHA_DE_SINTAXE = $(ID_LINHA_DE_SINTAXE); // obj do tipo input
+	BOTAO_RESULTADO = $(ID_BOTAO_RESULTADO);
+	BOTAO_LIMPAR_VISOR = $(ID_BOTAO_LIMPAR_VISOR);
 	
 	// Limpa o campo Sintaxe (Experimental)
 	VISOR_DA_CALCULADORA.on("focus", function() { setSintaxe(""); });
@@ -59,20 +71,25 @@ function init() {
 	});
 	
 	/*
-	   Vamos capturar o evento de pressionamento da tecla ENTER no campo de entrada
-	   e produzir o resultado do calculo, exatamente como se a tecla '=' fosse 
-	   pressionada. Isso agiliza os calculos quando o teclado e' usado.
+	   Vamos capturar o evento de pressionamento de algumas teclas no campo de entrada
+	   e produzir cliques nos botoes apropriados. Isso vai agilizar as operacoes.
 	*/
-	$("#entrada").keypress(function(e) { 
+	VISOR_DA_CALCULADORA.keyup(function(e) {
 		if( e.which == KEY_ENTER ) {
-			$("#btResultado").click(); // Simula o pressionamento do botao
-		} 
+			// A tecla ENTER produzira' o Resultado do calculo
+			BOTAO_RESULTADO.click();
+		} else if ( e.which == KEY_ESC ) {
+			// A tecla ESC limpara' o Visor
+			BOTAO_LIMPAR_VISOR.click();
+		}
 	});
 }
 
 // Esta funcao trata *TODOS* os eventos de clique nos botoes da calculadora
 function processBotaoClique(o) {
-	if( o.attr("id") == "btResultado" ) {
+	var sID = "#" + o.attr("id"); // precisamos adicionar o "#", pois 'attr' so retorna o nome
+	
+	if( sID == ID_BOTAO_RESULTADO ) {
 		/* 
 		  Protegeremos essa parte do codigo com TRY...CATCH, pois o usuario pode
 		  digitar qualquer coisa, e queremos avisa-lo de possiveis erros.
@@ -83,8 +100,14 @@ function processBotaoClique(o) {
 		catch(err) {
 			setDadosVisor( "ERROR" );
 		}
-	} else if( o.attr("id") == "btLimpar" ) {
+	} else if( sID == ID_BOTAO_LIMPAR_VISOR ) {
+		// Limpa completamente o Visor
 		setDadosVisor( "" );
+	} else if( sID == ID_BOTAO_LIMPAR_ULTIMO ) {
+		// Eliminar do Visor o ultimo caracter digitado
+		var saux = getDadosVisor();
+		
+		setDadosVisor( saux.substr(0, saux.length-1) );
 	}
 	else {
 		// Se nao for nenhuma das anteriores, entao simplesmente *adicione* o conteudo deste 
