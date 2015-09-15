@@ -1,76 +1,76 @@
 ﻿<!DOCTYPE html>
 <html>
-	<head>
-		<!--
-		   SIGMAWEBCALC v0.0 (Open Source Project)
-		   
-		   por 
-		      Henrique P. M. Vazquez
-		      Marcos V. de Souza Apolinario
-		      Paulo R. P. Macedo
-		      Ricardo Delamar Roque
-		      Vitor da S. Leite
-		      
-		   Produzido para Faculdade Sumare (Trabalho PPI 2o. Semestre)
-		   Orientacao Prof: Luciana Akemi Iakabayashi (Tecnologias de Sistemas para Web)
-		-->
-	
-		<!-- 
-		  Arquivo HTML mínimo para inicio do projeto.
-		  O arquivo HTML fornecerá a estrutura para nossa aplicação web.
-		-->
-		<title>Calculadora Comercial Web OpenSource</title>
-		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-		<!-- 
-		  Todos os Estilos ficarão em um outro arquivo. Os Estilos definem a aparência
-		  final da página.
-		-->
-		<link rel="stylesheet" href="sigmawebcalc.css">
-	</head>
+    <head>
+        <!--
+           SIGMAWEBCALC v0.0 (Open Source Project)
+           
+           por 
+              Henrique P. M. Vazquez
+              Marcos V. de Souza Apolinario
+              Paulo R. P. Macedo
+              Ricardo Delamar Roque
+              Vitor da S. Leite
+              
+           Produzido para Faculdade Sumare (Trabalho PPI 2o. Semestre)
+           Orientacao Prof: Luciana Akemi Iakabayashi (Tecnologias de Sistemas para Web)
+        -->
+    
+        <!-- 
+          Arquivo HTML mínimo para inicio do projeto.
+          O arquivo HTML fornecerá a estrutura para nossa aplicação web.
+        -->
+        <title>Calculadora Comercial Web OpenSource</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <!-- 
+          Todos os Estilos ficarão em um outro arquivo. Os Estilos definem a aparência
+          final da página.
+        -->
+        <link rel="stylesheet" href="sigmawebcalc.css">
+    </head>
 
-	<body>
-		<!-- ........................................................................ -->
-		<!-- Comentários -->
-		<h2>Protótipo da Calculadora</h2>
+    <body>
+        <!-- ........................................................................ -->
+        <!-- Comentários -->
+        <h2>Protótipo da Calculadora</h2>
 
-		<div class="visor">
-			<input id="sintaxe" type="text" value="Sigma WebCalc">
-			<input id="entrada" type="text" value="" tabindex="1">
-		</div>
-		<div id="botoes_calc" class="botoes">
-			<button id="bt0">0</button>
-			<button id="bt1">1</button>
-			<button id="bt2">2</button>
-			<button id="bt3">3</button>
-			<button id="bt4">4</button>
-			<button id="bt5">5</button>
-			<button id="bt6">6</button>
-			<button id="bt7">7</button>
-			<button id="bt8">8</button>
-			<button id="bt9">9</button>
-			
-			<button id="btPoint" class="separador">.</button>
-			<button id="btAbreParenteses" class="separador">(</button>
-			<button id="btFechaParenteses" class="separador">)</button>
-			
-			<button id="btLimpar" class="operador">C</button>
-			<button id="btLimparUltimo" class="operador">B</button>
-			<button id="btSomar" class="operador">+</button>
-			<button id="btSubtrair" class="operador">-</button>
-			<button id="btMultiplicar" class="operador">*</button>
-			<button id="btDividir" class="operador">/</button>
-			<button id="btResultado" class="operador">=</button>
-		</div>
-	
-		<!-- 
-		  O codigo em Javascript vai aqui para garantir performance.
-		  O Javascript adiciona funcionalidade a uma página HTML. Vamos usar o jQuery para
-		  facilitar e reduzir o tamanho do código final.
-		  Usamos o CDN do Google para garantir performance e disponibilidade.
-		  Uma outra opção seria CDN diretamente do site do jQuery ou baixarmos o arquivo
-		  localmente.			
-		-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="sigmawebcalc.js"></script>
-	</body>
+        <div class="visor">
+            <input id="sintaxe" type="text" value="Sigma WebCalc">
+            <input id="entrada" type="text" value="" tabindex="1">
+        </div>
+        <div id="botoes_calc" class="botoes">
+            <button id="bt0">0</button>
+            <button id="bt1">1</button>
+            <button id="bt2">2</button>
+            <button id="bt3">3</button>
+            <button id="bt4">4</button>
+            <button id="bt5">5</button>
+            <button id="bt6">6</button>
+            <button id="bt7">7</button>
+            <button id="bt8">8</button>
+            <button id="bt9">9</button>
+            
+            <button id="btPoint" class="separador">.</button>
+            <button id="btAbreParenteses" class="separador">(</button>
+            <button id="btFechaParenteses" class="separador">)</button>
+            
+            <button id="btLimpar" class="operador">C</button>
+            <button id="btLimparUltimo" class="operador">B</button>
+            <button id="btSomar" class="operador">+</button>
+            <button id="btSubtrair" class="operador">-</button>
+            <button id="btMultiplicar" class="operador">*</button>
+            <button id="btDividir" class="operador">/</button>
+            <button id="btResultado" class="operador">=</button>
+        </div>
+    
+        <!-- 
+          O codigo em Javascript vai aqui para garantir performance.
+          O Javascript adiciona funcionalidade a uma página HTML. Vamos usar o jQuery para
+          facilitar e reduzir o tamanho do código final.
+          Usamos o CDN do Google para garantir performance e disponibilidade.
+          Uma outra opção seria CDN diretamente do site do jQuery ou baixarmos o arquivo
+          localmente.            
+        -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="sigmawebcalc.js"></script>
+    </body>
 </html>
