@@ -75,19 +75,15 @@ div {
     height: 19vh;
 }
 
-.operador {
-    background-color: orange;
-}
-
-.separador {
-    background-color: green;    
-}
-
-#btResultado {
-    width: 50px;
-}
-
 #title01 {
     margin: 0;
     color: gray;
+}
+
+.operador {
+    color: orange;
+}
+
+.separador {
+    color: green;    
 }
