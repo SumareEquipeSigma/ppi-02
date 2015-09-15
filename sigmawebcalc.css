@@ -19,41 +19,41 @@
 
 */
 body {
-	/* Estas fontes são consideradas seguras para uso na Web */
-	font-family: arial, sans-serif, lucida;
-	font-size: 14px;
+    /* Estas fontes são consideradas seguras para uso na Web */
+    font-family: arial, sans-serif, lucida;
+    font-size: 14px;
 }
 
 .visor {
-	height: 30px;
+    height: 30px;
 }
 
 .visor input {
     border-radius: 5px;
     border: 1px solid #c0c0c0;
-	position: absolute;
+    position: absolute;
 }
 
 .visor input#entrada {
-	background-color: transparent;
+    background-color: transparent;
 }
 
 .visor input#sintaxe {
-	color: #bbb;
+    color: #bbb;
 }
 
 #botoes_calc button {
-    border-radius: 5px;	
+    border-radius: 5px;    
 }
 
 .operador {
-	background-color: orange;
+    background-color: orange;
 }
 
 .separador {
-	background-color: green;	
+    background-color: green;    
 }
 
 #btResultado {
-	width: 50px;
+    width: 50px;
 }
