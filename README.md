@@ -1,4 +1,3 @@
-<center><img src="./images/logoSigma.png" alt="Drawing" style="width: 50px; border: 0px;"  /></center>
 # ppi-02
 PPI CCOMP 2o. Semestre 2015
 
