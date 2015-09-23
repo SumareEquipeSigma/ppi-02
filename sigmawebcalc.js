@@ -67,7 +67,23 @@ function init() {
         // Definiremos agora a funcao que sera executada no evento 'click'
         o.click(function(event) { 
             processBotaoClique($(this));
+            
+            /* [ESTETICO]
+               Acrescentamos um pequeno efeito qdo da passagem do mouse sobre o botao (Hover).
+               Os botoes devem perder o foco imediatamente para nao atrapalhar este efeito,
+               dai a chamada da funcao 'blur' mais abaixo.
+               Esta acao e' apenas estetica e nao acrescenta nenhuma funcionalidade real, mas
+               melhora a *experiencia* do usuario.
+            */
+            $(this).blur();
         });
+        
+        /* [ESTETICO]
+           Acrescentamos um pequeno efeito qdo da passagem do mouse sobre o botao (Hover).
+           Esta acao e' apenas estetica e nao acrescenta nenhuma funcionalidade real, mas
+           melhora a *experiencia* do usuario.
+        */      
+        o.addClass("hvr-trim");
     });
     
     /*

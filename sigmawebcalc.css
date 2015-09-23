@@ -73,6 +73,9 @@ div {
     border-width: 1px;
     margin-left: 0.5%;
     height: 19vh;
+
+    /* Evita que a borda de selecao seja pintada no pressionamento dos botoes */
+    outline: none; 
 }
 
 #title01 {
@@ -86,4 +89,48 @@ div {
 
 .separador {
     color: green;    
+}
+
+/* - - - CSS de outras Fontes - - - */
+
+/* 
+   Trim Hover Effect COPIED from OpenSource Project:
+   
+   http://ianlunn.github.io/Hover/
+   
+   Aqui apenas demonstramos um pequeno efeito Hover e que tambem mostra
+   como a aplicacao pode rapidamente ficar complexa. O CSS a seguir foi
+   copiado diretamente do projeto mencionada acima.
+*/
+
+.hvr-trim {
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hvr-trim:before {
+  content: '';
+  position: absolute;
+  border: white solid 4px;
+  border-radius: 5px;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  opacity: 0;
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+}
+
+.hvr-trim:hover:before, 
+.hvr-trim:focus:before, 
+.hvr-trim:active:before {
+  opacity: 1;
 }
