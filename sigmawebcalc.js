@@ -18,8 +18,8 @@
 
 /* 
    Criamos algumas variaveis globais para tornar mais claro e rapido o codigo 
-   seguinte. Alguns valores iniciais foram zerados (null), pois os valores definitivos
-   serao colocados quando a funcao 'init' for executada. 
+   seguinte. Alguns valores iniciais foram zerados (null), pois os valores 
+   definitivos serao colocados quando a funcao 'init' for executada. 
 */
 var VISOR_DA_CALCULADORA = null,
     LINHA_DE_SINTAXE = null,
@@ -36,8 +36,8 @@ var VISOR_DA_CALCULADORA = null,
     ID_BOTAO_LIMPAR_ULTIMO = "#btLimparUltimo";
 
 /* 
-   A funcao 'init' e a primeira funcao que vamos rodar apos o download da pagina HTML
-   Ver evento 'ready' no final deste arquivo. 
+   A funcao 'init' e a primeira funcao que vamos rodar apos o download da pagina
+   HTML (veja o evento 'ready' no final deste arquivo).
 */
 function init() {
     // Seta algumas variaveis globais
@@ -51,17 +51,18 @@ function init() {
     $("#botoes_calc").on("mouseenter", function() { setSintaxe(""); });
     
     /* 
-       Aqui setamos o evento 'click' de *todos* os botoes da calculadora. Todos eles 
-       apontarao para uma funcao chamada 'processBotaoClique', ou seja, toda vez que 
-       um botao for clicado    aquela funcao sera chamada para tratar o evento de clique. 
+       Aqui setamos o evento 'click' de *todos* os botoes da calculadora. Todos
+       eles apontarao para uma funcao chamada 'processBotaoClique', ou seja, 
+       toda vez que um botao for clicado aquela funcao sera chamada para tratar
+       o evento de clique. 
     */
     $("#botoes_calc button").each(function(i) {
-        // Este bloco sera executado para cada botao existente dentro da DIV 'botoes_calc'
+        // Este bloco sera executado para cada botao da DIV 'botoes_calc'
         var o = $(this); // 'o' contem agora o botao em si
         /*
-           A funcao 'console' no javascript e' muito util para debugar o programa.
-           Aqui estamos apenas dando um exemplo de uso. Para ver esta saida no Chrome, 
-           use CTRL+SHIFT+I
+           A funcao 'console' no javascript e' muito util para debugar o 
+           programa. Aqui estamos apenas dando um exemplo de uso. Para ver esta
+           saida no Chrome, use CTRL+SHIFT+I
         */
         console.log(i + " - Setando evento 'click' para o botao (" + o.attr("id") + ")");
         // Definiremos agora a funcao que sera executada no evento 'click'
@@ -69,26 +70,27 @@ function init() {
             processBotaoClique($(this));
             
             /* [ESTETICO]
-               Acrescentamos um pequeno efeito qdo da passagem do mouse sobre o botao (Hover).
-               Os botoes devem perder o foco imediatamente para nao atrapalhar este efeito,
-               dai a chamada da funcao 'blur' mais abaixo.
-               Esta acao e' apenas estetica e nao acrescenta nenhuma funcionalidade real, mas
-               melhora a *experiencia* do usuario.
+               Acrescentamos um pequeno efeito qdo da passagem do mouse sobre o
+               botao (Hover). Os botoes devem perder o foco imediatamente para
+               nao atrapalhar este efeito, dai a chamada da funcao 'blur' mais
+               abaixo. Esta acao e' apenas estetica e nao acrescenta nenhuma 
+               funcionalidade real, mas melhora a *experiencia* do usuario.
             */
             $(this).blur();
         });
         
         /* [ESTETICO]
-           Acrescentamos um pequeno efeito qdo da passagem do mouse sobre o botao (Hover).
-           Esta acao e' apenas estetica e nao acrescenta nenhuma funcionalidade real, mas
-           melhora a *experiencia* do usuario.
+           Acrescentamos um pequeno efeito qdo da passagem do mouse sobre o
+           botao (Hover). Esta acao e' apenas estetica e nao acrescenta nenhuma
+           funcionalidade real, mas melhora a *experiencia* do usuario.
         */      
         o.addClass("hvr-trim");
     });
     
     /*
-       Vamos capturar o evento de pressionamento de algumas teclas no campo de entrada
-       e produzir cliques nos botoes apropriados. Isso vai agilizar as operacoes.
+       Vamos capturar o evento de pressionamento de algumas teclas no campo de
+       entrada e produzir cliques nos botoes apropriados. Isso vai agilizar as
+       operacoes.
     */
     VISOR_DA_CALCULADORA.keyup(function(e) {
         if( e.which == KEY_ENTER ) {
@@ -103,7 +105,8 @@ function init() {
 
 // Esta funcao trata *TODOS* os eventos de clique nos botoes da calculadora
 function processBotaoClique(o) {
-    var sID = "#" + o.attr("id"); // precisamos adicionar o "#", pois 'attr' so retorna o nome
+    // precisamos adicionar o "#", pois 'attr' so retorna o nome do 'id'
+    var sID = "#" + o.attr("id"); 
     
     if( sID == ID_BOTAO_RESULTADO ) {
         /* 
@@ -111,7 +114,8 @@ function processBotaoClique(o) {
           digitar qualquer coisa, e queremos avisa-lo de possiveis erros.
         */
         try {
-            setDadosVisor( eval(getDadosVisor()) ); // 'eval' produz o resultado do calculo
+            // 'eval' produz o resultado do calculo.
+            setDadosVisor( eval(getDadosVisor()) ); 
         }
         catch(err) {
             setDadosVisor( "ERROR" );
@@ -126,8 +130,8 @@ function processBotaoClique(o) {
         setDadosVisor( saux.substr(0, saux.length-1) );
     }
     else {
-        // Se nao for nenhuma das anteriores, entao simplesmente *adicione* o conteudo deste 
-        // botao ao Visor da calculadora
+        // Se nao for nenhuma das anteriores, entao simplesmente *adicione* o
+        // conteudo deste botao ao Visor da calculadora
         addDadosVisor( o.html() );
     }
 }
