@@ -12,3 +12,7 @@ A reunião realizada nesta data reuniu todos os membros da equipe. Foi ratificado
 Data 09/09/2015
 
 Estamos realizando as reuniões todas as terças-feiras 10 minutos antes do início das aulas. Na reunião que foi realizada excepcionalmente na quarta devido ao feriado de 7 de setembro, dividimos o PPI da seguinte forma. HTML: Henrique e Paulo. CSS:Vitor e Vinicius. Javascript+jQuery e Documentação: Roque. Para próxima semana discutiremos a aparência inicial da calculadora. Neste meio tempo também todos terão a oportunidade de estudar sua parte no projeto.
+
+Data 21/09/2015
+
+Esta aula da prof. Luciana foi dedicada ao PPI. A importância do GitHub foi destacada e uma primeira versão da calculadora foi examinada.

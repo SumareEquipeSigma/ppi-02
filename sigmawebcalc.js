@@ -1,5 +1,5 @@
 /*
-   SIGMAWEBCALC v0.0 (Open Source Project)
+   SIGMAWEBCALC v0.1 (Open Source Project)
 
    O codigo abaixo e' responsavel por dar funcionalidade a Calculadora.
    Tentamos comentar o maximo possivel para que ele sirva de referencia para
