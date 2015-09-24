@@ -3,18 +3,18 @@ PPI CCOMP 2o. Semestre 2015
 
 Prezados amigos da Equipe Sigma,
 
-Bem vindos ao repositório do PPI do 2o. Semestre do curso de Ciência da Computação da Faculdade Sumaré. Este repositório é **PÚBLICO**, ou seja, **Open Source**, qualquer um pode baixar os arquivos aqui contidos para estudo. Contudo, somente nós do grupo é que podemos realizar modificações. Claro que qualquer usuário pode sugerir mudanças que podemos aproveitar para melhorar o projeto.
+Bem vindos ao repositÃ³rio do PPI do 2o. Semestre do curso de CiÃªncia da ComputaÃ§Ã£o da Faculdade SumarÃ©. Este repositÃ³rio Ã© **PÃšBLICO**, ou seja, **Open Source**, qualquer um pode baixar os arquivos aqui contidos para estudo. Contudo, somente nÃ³s do grupo Ã© que podemos realizar modificaÃ§Ãµes. Claro que qualquer usuÃ¡rio pode sugerir mudanÃ§as que podemos aproveitar para melhorar o projeto.
 
 Projeto: **CALCULADORA COMERCIAL WEB**
 
-Arquivos neste Repositório:
+Arquivos neste RepositÃ³rio:
 
-* **'README.md'** Contém o conteúdo que vc está lendo agora.
-* **'HOWTO.md'** Contém dicas e links para ferramentas usadas no projeto, inclusive sobre como instalar e operar o GitHub.
-* **'sigmawebcalc.html'** HTML contendo a estrutura da aplicação.
-* **'sigmawebcalc.css'** Contém todos os Estilos.
-* **'sigmawebcalc.js'** Código Javascript + jQuery da aplicação.
-* **'images/'** É um diretório que contém todas as imagens utilizadas.
+* **'README.md'** ContÃ©m o conteÃºdo que vc estÃ¡ lendo agora.
+* **'HOWTO.md'** ContÃ©m dicas e links para ferramentas usadas no projeto, inclusive sobre como instalar e operar o GitHub.
+* **'sigmawebcalc.html'** HTML contendo a estrutura da aplicaÃ§Ã£o.
+* **'sigmawebcalc.css'** ContÃ©m todos os Estilos.
+* **'sigmawebcalc.js'** CÃ³digo Javascript + jQuery da aplicaÃ§Ã£o.
+* **'images/'** Ã‰ um diretÃ³rio que contÃ©m todas as imagens utilizadas.
 
 Tecnologias utilizadas: **HTML5/CSS3/Javascript+jQuery**
 

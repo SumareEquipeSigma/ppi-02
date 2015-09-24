@@ -1,0 +1,18 @@
+Justificativa
+
+Apesar de existirem um sem número de calculadoras já disponíveis na web, decidimos por este tema porque ele abrange praticamente todas as disciplinas ministradas neste semestre. Nosso foco contudo será no projeto e trabalho em equipe, já que é muito diferente trabalharmos sozinhos e em grupo. Para este projeto, por exemplo, introduzimos o uso do GitHub, que é o mais conhecido sistema de versionamento de arquivos. Também todos os membros da equipe receberam instruções para documentarem muito bem todo código para que este sirva de referência no futuro. Com este projeto visamos consolidar os conceitos vistos durante o curso e expandi-los para um projeto Open Source prático, ainda que simples.
+
+HISTÓRICO
+
+Data 01/09/2015
+
+A reunião realizada nesta data reuniu todos os membros da equipe. Foi ratificado o tema do projeto, o dia para reuniões e trocamos informações sobre que ferramentas usar no projeto, bem como pesquisamos alguns sites com calculadoras, para termos uma ideia do que já existe e criar algo original.
+
+
+Data 09/09/2015
+
+Estamos realizando as reuniões todas as terças-feiras 10 minutos antes do início das aulas. Na reunião que foi realizada excepcionalmente na quarta devido ao feriado de 7 de setembro, dividimos o PPI da seguinte forma. HTML: Henrique e Paulo. CSS:Vitor e Vinicius. Javascript+jQuery e Documentação: Roque. Para próxima semana discutiremos a aparência inicial da calculadora. Neste meio tempo também todos terão a oportunidade de estudar sua parte no projeto.
+
+Data 21/09/2015
+
+Esta aula da prof. Luciana foi dedicada ao PPI. A importância do GitHub foi destacada e uma primeira versão da calculadora foi examinada.

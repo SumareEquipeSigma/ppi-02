@@ -1,6 +1,89 @@
-﻿/* Comentários */
+﻿/*
+   SIGMAWEBCALC v0.1 (Open Source Project)
+   
+   por 
+      Henrique P. M. Vazquez
+      Marcos V. de Souza Apolinario
+      Paulo R. P. Macedo
+      Ricardo Delamar Roque
+      Vitor da S. Leite
+      
+   Produzido para Faculdade Sumare (Trabalho PPI 2o. Semestre)
+   Orientacao Prof: Luciana Akemi Iakabayashi (Tecnologias de Sistemas para Web)
+*/
+
+/*
+   DICAS:
+   Teste com seletores CSS. Extremamente útil: http://www.w3schools.com/cssref/trysel.asp
+*/
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 650px;
+    min-height: 400px;
+}
+
 body {
+    display: table;  
     /* Estas fontes são consideradas seguras para uso na Web */
     font-family: arial, sans-serif, lucida;
     font-size: 14px;
+}
+
+div {
+    width: 100%;
+    display: table-row;
+    background: white;
+}
+
+.visor {
+    height: 20%; /* Obrigatorio */
+}
+
+.visor input {
+    position: absolute; /* Obrigatorio */
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+    width: 100%;
+    height: 18%;
+    font-size: 15vh;
+}
+
+.visor input#entrada {
+    background-color: transparent; /* Obrigatorio */
+}
+
+.visor input#sintaxe {
+    color: #bbb;
+}
+
+#botoes_calc {
+    height: 100%;
+    background: linear-gradient(to bottom, #fff 0, #e6e6e6 100%);
+}
+
+#botoes_calc button {
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #fff 0, #e6e6e6 100%);
+    font-size: 10vh;
+    width: 19%;
+    border-width: 1px;
+    margin-left: 0.5%;
+    height: 19vh;
+}
+
+#title01 {
+    margin: 0;
+    color: gray;
+}
+
+.operador {
+    color: orange;
+}
+
+.separador {
+    color: green;    
 }
