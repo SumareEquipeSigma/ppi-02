@@ -1,8 +1,45 @@
-Justificativa
+*** CAPA
+
+  Calculadora Comercial Web 
+(HTML5/CSS3/Javascript+jQuery)
+
+*** INTRODUÇÃO
+
+Atualmente em TI temos uma miríade de linguagens de programação e tecnologias disponíveis. Optar por uma ou outra é uma questão de projeto e por vezes de razões históricas. Contudo, toda tecnologia tem seu fundamento. Neste PPI iremos lidar com os elementos fundamentais para o desenvolvimento de aplicações Web. O uso destas tecnologias lançará a base para o aprendizado e entendimento de outras tecnologias mais complexas. Também vamos introduzir o trabalho com versionamento de arquivos, que é uma forma de trabalho em equipe, principalmente no âmbito tecnológico que gera maior produtividade. Claro, existe uma curva de aprendizado para se absorver este novo modo de trabalho e também um certo trauma a ser vencido, já que trabalhar em equipe tem elementos adicionais que devem ser considerados. Ao final do trabalho esperamos que todos os membros da equipe tenham entendido plenamento a sua parte e também as partes feitas pelos outros membros da equipe, para isso os comentários devem ser claros e efetivos.
+
+*** OBJETIVO
+
+Nosso objetivo será o desenvolvimento de uma Calculadora Comercial web usando HTML5, CSS3 e Javascript+jQuery. Ela rodará online ou não, e terá a mesma aparência nos diversos dispositivos hoje existentes. Para isso vamos usar as três camadas de desenvolvimento: Estrutura (HTML), Formatação (CSS) e funcionalidade (Javascript + jQuery). No final teremos esses três arquivos que juntos formarão a aplicação propriamente dita. 
+
+*** JUSTIFICATIVA
 
 Apesar de existirem um sem número de calculadoras já disponíveis na web, decidimos por este tema porque ele abrange praticamente todas as disciplinas ministradas neste semestre. Nosso foco contudo será no projeto e trabalho em equipe, já que é muito diferente trabalharmos sozinhos e em grupo. Para este projeto, por exemplo, introduzimos o uso do GitHub, que é o mais conhecido sistema de versionamento de arquivos. Também todos os membros da equipe receberam instruções para documentarem muito bem todo código para que este sirva de referência no futuro. Com este projeto visamos consolidar os conceitos vistos durante o curso e expandi-los para um projeto Open Source prático, ainda que simples.
 
-HISTÓRICO
+*** DESENVOLVIMENTO
+
+Por se tratar do desenvolvimento de uma aplicação, todos os comentários e código estão contidos em um repositório.  Este repositório pode ser alcançado em: https://github.com/SumareEquipeSigma/ppi-02.git
+
+Ele é de domínio público e qualquer um pode baixar, usar, alterar e publicar novos trabalhos, desde que mencione a fonte inicial.
+
+i*** CONCLUSÃO
+
+Este projeto foi muito importante para destacar as diferenças entre se fazer algo sozinho e em grupo. Principalmente em se tratando de TI. A maioria de nós está acostumada a sair produzindo algo sem se preocupar com projeto ou documentação. Aprendemos que é de suma importância discutirmos em grupo a estrutura e rumos que vamos tomar, a falta de comunicação é sem dúvida o maior problema hoje na maioria dos projetos, e também a maior causa de projetos ruins. Ao final do nosso trabalho temos agora um projeto Open Source que pode usado por qualquer pessoa para aprender a trabalhar com HTML5, CSS3 e Javascript+jQuery. Esperamos no futuro poder expandir as funcionalidades desta calculadora, talvez até para uma calculadora científica, o que é totalmente possível dados os moldes em que o projeto foi realizado.
+
+*** REFERÊNCIAS
+
+MACDONALD, Matthew. "HTML5: The Missing Manual". 2a. Edição. Editora: O'Reilly Media. ISBN-13: 978-1449363260. Idioma: Inglês.
+
+MCFARLAND, David Sawyer. "CSS3: The Missing Manual". 3a. Edição. Editora: O'Reilly Media. ISBN-13: 978-1449325947. Idioma: Inglês.
+
+DUCKETT, Jon. "JavaScript and JQuery: Interactive Front-End Web Development". 1a. Edição. Editora: Wiley. ISBN-13: 978-1118531648. Idioma: Inglês.
+
+LOELIGER, Jon. "Version Control with Git: Powerful tools and techniques for collaborative software development". 2a. Edição. Editora: O'Reilly Media. ISBN-13: 978-1449316389. Idioma: Inglês.
+
+W3SCHOOLS. "O maior Site para Desenvolvedores Web no Mundo". Disponível em: http://www.w3schools.com. HTML: http://www.w3schools.com/html -- CSS: http://www.w3schools.com/css -- JAVASCRIPT: http://www.w3schools.com/js. Idioma: Inglês.
+
+-------------------------------------
+
+HISTÓRICO DAS REUNIÕES
 
 Data 01/09/2015
 
@@ -16,3 +53,8 @@ Estamos realizando as reuniões todas as terças-feiras 10 minutos antes do início
 Data 21/09/2015
 
 Esta aula da prof. Luciana foi dedicada ao PPI. A importância do GitHub foi destacada e uma primeira versão da calculadora foi examinada.
+
+Data 06/10/2015
+
+Nesta rápida reunião foi passado a todo grupo nosso prazo final para entrega do PPI, que será 31/10/2015. As tarefas de cada foram novamente ratificadas, com a adição da criação de um documento em ABNT, que ficará a cargo do Paulo.
+
