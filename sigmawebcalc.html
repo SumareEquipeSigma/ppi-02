@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
+<!DOCTYPE html><!-- tag que declara o tipo do documento -->
+<html><!-- tag que abre o código de html -->
+    <head><!-- abre o cabeçalho da página, e os conjuntos de informações da página html-->
         <!--
-           SIGMAWEBCALC v0.1 (Open Source Project)
+           SIGMAWEBCALC v0.0 (Open Source Project)
            
            por 
               Henrique P. M. Vazquez
@@ -15,29 +15,41 @@
            Orientacao Prof: Luciana Akemi Iakabayashi (Tecnologias de Sistemas para Web)
         -->
     
-        <title>SigmaWebCalc</title>
-        <link rel="shortcut icon" href="./images/logoSigma.png">
+        <!-- 
+          Arquivo HTML mínimo para inicio do projeto.
+          O arquivo HTML fornecerá a estrutura para nossa aplicação web.
+        -->
+        <title>SigmaWebCalc</title><!-- título que é exibido na barra superior do seu browser -->
+        <link rel="shortcut icon" href="./images/logoSigma.png"><!-- tag para o ícone que aparece no browser -->
+        <!-- Entrada de meta tags, são uma valiosa ferramenta de comunicação entre o web master e os sites de busca,
+        essas informações não são exibidas na tela principal do Browser -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> <!-- meta para configurar caracteres-->
         <meta NAME="author" content="Henrique, Marcos, Paulo, Ricardo, Vitor "/> <!-- Declaração de autor -->
         <meta NAME="copyright" content="Sigma"/> <!-- declara direito autoral -->
         <meta NAME="description" content="Calculadora"/><!-- descrição do conteudo da pagina -->
-        <META NAME="ROBOTS" content="INDEX, FOLLOW"/> <!-- orienta os buscadores a indexar o conteudo da pagina -->
+        <META NAME="ROBOTS" content="INDEX, FOLLOW"/> <!-- orienta os buscadores a indexar o conteudo da pagina, -->
         
         <!-- 
           Todos os Estilos ficarão em um outro arquivo. Os Estilos definem a aparência
           final da página.
         -->
-        <link rel="stylesheet" href="sigmawebcalc.css"> <!-- link para arquivo css -->
-    </head>
+        <link rel="stylesheet" href="sigmawebcalc.css"> <!-- link para arquivo css, onde seram implementados os estilos da aplicação -->
+    </head><!-- fechamento do cabeçalho  -->
 
-    <body>
-        <p id="title01">SigmaWebCalc v0.1</p>
+    <body><!-- corpo código html,onde vai a construção do site e suas aplicações, tudo que aparecer na calculadora esta aqui -->
+        <!-- ........................................................................ -->
+        <!-- Separamos os botões por grupos de semelhançã para melhor aplicar cada configuração e estilo  -->
+        <p id="title01">SigmaWebCalc v1.0</p>
 
-        <div class="visor">
-            <input id="sintaxe" type="text" value="0">
-            <input id="entrada" type="text" value="" tabindex="1">
+        <div class="visor"> <!-- div do visor da calculadora e os códigos referentes a está área estão aqui dentro -->
+        <!-- a div é uma tag, que faz a separação no arquivo html, ou seja ela cria um Container, onde separa uma parte do código da outra para melhor configuração e estilo -->
+            <input id="sintaxe" type="text" value="0"><!-- tag de sintaxe que dará um auxilio ao usuario de como fazer o input de informação -->
+            <input id="entrada" type="text" value="" tabindex="1"> <!-- tag de entrada de texto no html, será o visor da nossa calculadora -->
         </div>
-        <div id="botoes_calc" class="botoes">
+        <div id="botoes_calc" class="botoes"><!-- div dos botões, da calculadora -->
+        <!-- a tag button é o codigo que cria os botões da calculadora-->
+        <!-- a tag id identifica o botão, com isso podemos aplicar uma configuração exclusiva no botão -->
+        <!-- e a tag class separá por grupo de semelhança, e assim eu consigo cofigurar todos com um unico código--> 
             <button id="bt7">7</button>
             <button id="bt8">8</button>
             <button id="bt9">9</button>
@@ -74,5 +86,5 @@
         -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="sigmawebcalc.js"></script>
-    </body>
-</html>
+    </body><!-- fechamento do corpo do código --> 
+</html><!-- fechamento do tag html -->
