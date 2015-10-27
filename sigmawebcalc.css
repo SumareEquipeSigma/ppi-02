@@ -97,57 +97,15 @@ div {
     height: 19vh;
 }
 
-/* Aqui é determinado o margin 0, (anulando a margem) e dertermiado a cor com o atributo color  */
+/* Aqui é determinado o margin 0, (anulando a margem) e dertermiando a cor com o atributo color  */
 #title01 {
     margin: 0;
     color: gray;
 }
 
-/* Aqui esta sendo determinada a cor dos botôes de operações  */
+/* Aqui esta sendo determinada a cor dos botões de operações  */
 .operador {
     color: orange;
-}
-
-/* No bloco abaixo esta sendo determinado o efeito hover, ou seja quando o cursor do mouse for passado nos botôes númericos a cor de fundo do botão será preta e a fonte branca  */
-#botoes_calc button:hover{
-    background: linear-gradient(to bottom, #fff 0, #000000 100%);
-    color:white;
-}
-
-/* No bloco abaixo esta sendo determinado o efeito hover, ou seja quando o cursor do mouse for passado nos botôes de operação a cor de fundo do botão será laranja e a fonte branca  */
-#btLimparUltimo.operador:hover{
-    background:orange;
-    color:white;
-}
-
-#btLimpar.operador:hover{
-    background:orange;
-    color:white;
-}
-
-#btSomar.operador:hover{
-    background:orange;
-    color:white;
-}
-
-#btSubtrair.operador:hover{
-	background:orange;
-	color:white;
-}
-
-#btMultiplicar.operador:hover{
-	background:orange;
-	color:white;
-}
-
-#btDividir.operador:hover{
-	background:orange;
-	color:white;
-}
-
-#btResultado.operador:hover{
-	background:orange;
-	color:white;
 }
 
 /* Aqui é determinado a cor para os separadores  */
@@ -155,18 +113,20 @@ div {
     color: green;    
 }
 
+/* No bloco abaixo esta sendo determinado o efeito hover, ou seja quando o cursor do mouse for passado nos botôes de operação a cor de fundo do botão será laranja e a fonte branca  */
+#botoes_calc .operador:hover {
+    background:orange;
+    color:white;
+}
+
 /* No bloco abaixo esta sendo determinado o efeito hover, ou seja quando o cursor do mouse for passado nos botôes sepadores a cor de fundo do botão será verde e a fonte branca  */
-#btPoint.separador:hover{
-	background:green;
-	color:white;
+#botoes_calc .separador:hover{
+    background:green;
+    color:white;
 }
 
-#btAbreParenteses.separador:hover{
-	background:green;
-	color:white;
-}
-
-#btFechaParenteses.separador:hover{
-	background:green;
-	color:white;
+/* No bloco abaixo esta sendo determinado o efeito hover, ou seja quando o cursor do mouse for passado nos botôes númericos a cor de fundo do botão será preta e a fonte branca  */
+#botoes_calc button:hover{
+    background: linear-gradient(to bottom, #fff 0, #000000 100%);
+    color:white;
 }
