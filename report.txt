@@ -5,7 +5,7 @@
 
 *** INTRODUÇÃO
 
-Atualmente em TI temos uma miríade de linguagens de programação e tecnologias disponíveis. Optar por uma ou outra é uma questão de projeto e por vezes de razões históricas. Contudo, toda tecnologia tem seu fundamento. Neste PPI iremos lidar com os elementos fundamentais para o desenvolvimento de aplicações Web. O uso destas tecnologias lançará a base para o aprendizado e entendimento de outras tecnologias mais complexas. Também vamos introduzir o trabalho com versionamento de arquivos, que é uma forma de trabalho em equipe, principalmente no âmbito tecnológico que gera maior produtividade. Claro, existe uma curva de aprendizado para se absorver este novo modo de trabalho e também um certo trauma a ser vencido, já que trabalhar em equipe tem elementos adicionais que devem ser considerados. Ao final do trabalho esperamos que todos os membros da equipe tenham entendido plenamento a sua parte e também as partes feitas pelos outros membros da equipe, para isso os comentários devem ser claros e efetivos.
+Atualmente em TI temos uma miríade de linguagens de programação e tecnologias disponíveis. Optar por uma ou outra é uma questão de projeto e por vezes de razões históricas. Contudo, toda tecnologia tem seu fundamento. Neste PPI iremos lidar com os elementos fundamentais para o desenvolvimento de aplicações Web. O uso destas tecnologias lançará a base para o aprendizado e entendimento de outras tecnologias mais complexas. Também vamos introduzir o trabalho com versionamento de arquivos, que é uma forma de trabalho em equipe, principalmente no âmbito tecnológico que gera maior produtividade. Claro, existe uma curva de aprendizado para se absorver este novo modo de trabalho e também um certo trauma a ser vencido, já que trabalhar em equipe tem elementos adicionais que devem ser considerados. Ao final do trabalho esperamos que todos os membros da equipe tenham entendido plenamente a sua parte e também as partes feitas pelos outros membros da equipe, para isso os comentários devem ser claros e efetivos.
 
 *** OBJETIVO
 
@@ -21,7 +21,7 @@ Por se tratar do desenvolvimento de uma aplicação, todos os comentários e código
 
 Ele é de domínio público e qualquer um pode baixar, usar, alterar e publicar novos trabalhos, desde que mencione a fonte inicial.
 
-i*** CONCLUSÃO
+*** CONCLUSÃO
 
 Este projeto foi muito importante para destacar as diferenças entre se fazer algo sozinho e em grupo. Principalmente em se tratando de TI. A maioria de nós está acostumada a sair produzindo algo sem se preocupar com projeto ou documentação. Aprendemos que é de suma importância discutirmos em grupo a estrutura e rumos que vamos tomar, a falta de comunicação é sem dúvida o maior problema hoje na maioria dos projetos, e também a maior causa de projetos ruins. Ao final do nosso trabalho temos agora um projeto Open Source que pode usado por qualquer pessoa para aprender a trabalhar com HTML5, CSS3 e Javascript+jQuery. Esperamos no futuro poder expandir as funcionalidades desta calculadora, talvez até para uma calculadora científica, o que é totalmente possível dados os moldes em que o projeto foi realizado.
 
